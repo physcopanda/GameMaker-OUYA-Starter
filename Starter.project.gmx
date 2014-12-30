@@ -36,7 +36,7 @@
   </rooms>
   <constants number="11">
     <constant name="OVERSCANXY">32</constant>
-    <constant name="PROJECT">"GMS Android Alpha Smearing"</constant>
+    <constant name="PROJECT">"STARTER PROJECT"</constant>
     <constant name="ANALOGUE_DEADZONE">0.2</constant>
     <constant name="GAMEPAD_NONE">-9999</constant>
     <constant name="GAMEPAD_UNKNOWN">-1</constant>

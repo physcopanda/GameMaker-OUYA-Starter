@@ -129,7 +129,7 @@ ty2 = 1 - global.shake_max / global.hh;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// handle screen step
+            <string>/// HANDLE DISPLAY CHANGES
 // shake
 if(global.shaking){
     global.surfx = irandom_range(-global.shake_max, global.shake_max);
@@ -225,13 +225,14 @@ if(os_type != os_android){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// calculate fps every 0.5 second
-if(get_timer() - time &gt; 500000){
+            <string>/// CALC FPS
+if(get_timer() - time &gt; 5000000){
     time = get_timer();
+    fps_str = mean(fps_old, fps_real);
     show_debug_message("fps_real = " + string(fps_str));
+    fps_old = fps_real;
 }
-fps_str = mean(fps_old, fps_real);
-fps_old = fps_real;
+
 
 </string>
           </argument>

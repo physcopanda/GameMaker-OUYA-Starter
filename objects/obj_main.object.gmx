@@ -71,26 +71,6 @@ for(var i=1; i&lt;=4; i++){
         gamepad(i, global.p[i]);
     }
 }
-var vs = 0;
-var hs = 0;
-if(abs(global.p_axislh[1]) &gt; ANALOGUE_DEADZONE){
-    hs = global.p_axislh[1]*10;
-}
-if(abs(global.p_axislv[1]) &gt; ANALOGUE_DEADZONE){
-    vs = global.p_axislv[1]*10;
-}
-background_hspeed[0] = hs;
-background_vspeed[0] = vs;
-
-if(global.p_o[1]){
-    if(instance_exists(obj_darkness)){
-        with(obj_darkness){
-            instance_destroy();
-        }
-    } else {
-        instance_create(0, 0, obj_darkness);       
-    }
-}
 
 
 </string>
