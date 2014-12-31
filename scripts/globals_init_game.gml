@@ -21,22 +21,23 @@ global.surfx = 0;
 global.surfy = 0;
 
 // KEYS - load or default
+// define these however you want
 global.key_up = ini_read_real('keys', 'up', vk_up);
 global.key_left = ini_read_real('keys', 'left', vk_left);
 global.key_down = ini_read_real('keys', 'down', vk_down);
 global.key_right = ini_read_real('keys', 'right', vk_right);
 global.key_stickl = ini_read_real('keys', 'stickl', ord('1'));
 global.key_stickr = ini_read_real('keys', 'stickr', ord('2'));
-global.key_o = ini_read_real('keys', 'o', ord('O'));
-global.key_u = ini_read_real('keys', 'u', ord('U'));
-global.key_y = ini_read_real('keys', 'y', ord('Y'));
-global.key_a = ini_read_real('keys', 'a', ord('A'));
-global.key_rs = ini_read_real('keys', 'rs', ord('4'));
-global.key_ls = ini_read_real('keys', 'ls', ord('3'));
+global.key_o = ini_read_real('keys', 'o', ord('Z'));
+global.key_u = ini_read_real('keys', 'u', ord('X'));
+global.key_y = ini_read_real('keys', 'y', vk_space);
+global.key_a = ini_read_real('keys', 'a', ord('C'));
+global.key_rs = ini_read_real('keys', 'rs', ord('A'));
+global.key_ls = ini_read_real('keys', 'ls', ord('D'));
 global.key_rst = ini_read_real('keys', 'rst', vk_ralt);
 global.key_lst = ini_read_real('keys', 'lst', vk_lalt);
-global.key_st = ini_read_real('keys', 'st', vk_return);
-global.key_se = ini_read_real('keys', 'se', vk_space);
+global.key_st = ini_read_real('keys', 'st', ord('P'));
+global.key_se = ini_read_real('keys', 'se', ord('O'));
 
 // global interface style - OUYA/XBOX/KEYS/...
 global.control_interface = "OUYA";

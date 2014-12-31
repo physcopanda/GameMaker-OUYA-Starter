@@ -9,7 +9,7 @@
 global.r_dpad = 0; // allows continuous movement
 global.r_stickl = 0;
 global.r_stickr = 0;
-global.r_o = -1; // buttons with a 5 frame repeat
+global.r_o = 5; // buttons with a 5 frame repeat
 global.r_u = 5;
 global.r_y = 5;
 global.r_a = 5;

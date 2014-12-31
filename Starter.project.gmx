@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_font_c64</sprite>
     <sprite>sprites\spr_font_c64_big</sprite>
+    <sprite>sprites\spr_controller</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -30,6 +31,9 @@
   <objects name="objects">
     <object>objects\obj_main</object>
     <object>objects\obj_application_surface</object>
+    <objects name="test">
+      <object>objects\obj_controller</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

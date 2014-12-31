@@ -24,6 +24,34 @@ global.seeking_gamepads = false
 
 It's expensive processor wise as we are polling all connected devices for input on all buttons!
 
+----
+
+Note the following about screen sizing:
+
+The OVERSCANXY variable defines a dead zone around the screen where visibility is not essential to your game.
+ 
+If the game is run fullscreen on a device with a display aspect that would clip the overscan for a larger screen *but not anything else*, then this clipping is allowed. This provides a better experience for those users as they get bigger graphics.
+
+Otherwise - you get the next scale down that fits on screen.
+ 
+There is the odd occasion (Some Nexus pads I believe) where this comes in handy as it gives a bigger display. Just ensure that your OVERSCANXY area really never contains anything you *must* be able to see. If you dont want this feature - just set it's value to 0.
+
+----
+
+Note about control schemas:
+
+The file globals_init_controllers contains a schema used for all control input whether it's keyboard based or gamepad.
+
+You can define whether you want buttons to be continuous - i.e. Once pressed - the value is stored as on always, one time only - Once pressed - the value is stored as on for one frame only, or strobing with a frame delay.
+
+Look at the comments in the script to see how to define these - it would be perfectly possible to change the schema in different rooms or for different requirements.
+
+----
+
+The starter project has a couple of test objects on screen one demonstrating keyboard input - the other gamepad just so you can see it in action.
+
+
+
 Good luck with your projects
 
 Jamie Howard

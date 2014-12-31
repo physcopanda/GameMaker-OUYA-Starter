@@ -25,10 +25,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globals_init_game();
+            <string>/// INIT MAIN
+globals_init_game();
 globals_init_controllers();
 
 instance_create(0, 0, obj_application_surface);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// CREATE SOME CONTROLLERS OBJECTS
+// this is only for testing and shows the controller scheme in action
+var w = global.ww/3;
+var c0 = instance_create(w, global.hhh, obj_controller);
+var c1 = instance_create(w&lt;&lt;1, global.hhh, obj_controller);
+// beef them up!
+var s = 3;
+obj_controller.image_xscale = s;
+obj_controller.image_yscale = s;
 
 </string>
           </argument>
